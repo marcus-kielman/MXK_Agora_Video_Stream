@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,500&display=swap');
+
+body{
+    background-color: #f9f7e3;
+}
+.banner {
+    display: flex;
+    background-color: #a7aa94;
+    color: white;
+}
+
+.banner-text {
+    padding: 8px 20px;
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-style:italic;
+}
+#mxk_ban_img{
+    max-width: 50px;
+    max-height: 50px
+}
+#cn_text{
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-style:italic;
+}
+.player-name{
+    opacity:0;
+}
+.player-name:hover{
+    opacity:1;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-style:italic;
+}
+#join-form{
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-group{
+    height: 75vh;
+    overflow:scroll;
+}
+.player {
+    margin:auto;
+    width: 90vw;
+    height: 80vh;
+    max-width: 800px;
+}
+
+.player-name {
+    margin: 8px 0;
+}
+
+@media (max-width: 640px) {
+    .player {
+        margin: auto;
+        width: 90vw;
+        height: 40vh;
+    }
+}
+
+.btn-agora {
+    width: 22%;
+    background-color: #c3b45b;
+    color: white;
+}
+
+.btn-agora:hover {
+    background-color: #f9f7e3;
+    color: white;
+}

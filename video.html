@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MXK Productions Video Call</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./video.css">
+</head>
+<html>
+    <body>
+        <!-- Banner -->
+        <div class="container-fluid banner">
+            <img onclick="location.href = './index.html';" id="mxk_ban_img" src="MXK_Productions_Logo_Watermark-removebg-preview.png"/>
+            <p class="banner-text">MXK Productions Broadcast</p>
+        </div>
+
+        <div class="container">
+            <!-- Videos -->
+            <div class="row video-group">
+                <div class="col">
+                    <!-- Local video -->
+                    <p id="local-player-name" class="player-name"></p>
+                    <div id="local-player" class="player">
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <!-- Remote streams -->
+                <div class="col">
+                    <div id="remote-playerlist"></div>
+                </div>
+            </div>
+            <!-- Join form -->
+            <form id="join-form" class="mt-3">
+                <p id="cn_text">Channel Name:</p>
+                <input id="channel" type="text" placeholder="Enter channel name" required class="form-control"
+                    style="width: 90%;">
+                <!-- Buttons -->
+                <div class="button-group mt-3">
+                    <button id="join" type="submit" class="btn btn-agora">Join</button>
+                    <button id="leave" type="button" class="btn btn-agora" disabled>Leave</button>
+                    <button id="mic-btn" type="button" class="btn btn-agora" disabled>
+                        Mute Audio
+                    </button>
+                    <button id="video-btn" type="button" class="btn btn-agora" disabled>
+                        Mute Video
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+        <script src="./video.js"></script>
+    </body>
+</html>
