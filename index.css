@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,500&display=swap');
+            
+body{
+    margin: 0;
+}
+#container{
+    display: flex;
+    height: 100vh;
+    background-color: #f9f7e3;
+}
+#login-pane{
+    z-index:1; 
+    position: absolute;
+    /*background-color:#a7aa94;*/
+    background-color: rgba(167, 170, 148, 0.9);
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    margin: 150px auto;
+    width: 80%;
+    height: 360px;
+    max-width: 500px;
+}
+#mxk_title{
+    width: 60%;
+    text-align:center;
+    color:white;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-style:italic;
+    margin: 20px auto;
+}
+#mxk_logo{
+    margin: auto;
+}
+#mxk_img{
+    width: 100vw;
+    max-width: 100vh;
+    max-height: 100vh;
+}
+.input_field{
+    margin: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: 'Saira', sans-serif;
+    padding: 5px;
+    width: 90%;
+    border-radius: 20px;
+    border: 5px;
+}
+.input_field_wrong{
+    margin: 10px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: 'Saira', sans-serif;
+    padding: 5px;
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid rgb(253, 8, 8);
+}
+#login{
+    margin-left: 37%;
+    background-color: #c3b45b;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Saira', sans-serif;
+    font-style:italic;
+    
+}

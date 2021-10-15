@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MXK Productions Video Call</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css"/>
+        <script lang="javascript">
+            function validate(){
+                let email = document.getElementById("email");
+                let password = document.getElementById("password");
+                
+                if(!email.value.match(/\S+@\S+/) && password.value != "To(Beor"){
+                    alert("Email and passsword not correct");
+                    email.className = "input_field_wrong";
+                    password.className = "input_field_wrong";
+                    return false;
+                }
+                if(!email.value.match(/\S+@\S+/)){
+                    alert("Please enter a valid email address");
+                    email.className = "input_field_wrong";
+                    return false;
+                }
+                //Change conditionals (These were the ones from video)
+                if(password.value != "To(Beor"){
+                    alert("Please enter the correct password")
+                    password.className = "input_field_wrong";
+                    console.log("Password is shorter than 8 characters");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="mxk_logo">
+                <img id="mxk_img" src="MXK_Productions_Logo_Watermark-removebg-preview.png"/>
+            </div>
+            <div id="login-pane">
+                <div id="mxk_title">
+                    <h1 style="max-width:100%; max-height:100%;">MXK PRODUCTIONS</h1>
+                </div>
+                <div>
+                    <form action="./video.html" onsubmit="return validate()">
+                        <input type="text" id="email" class="input_field" placeholder="Email"/>
+                        <br />
+                        <input type="password" id="password" class="input_field" placeholder="Password"/>
+                        <br />
+                        <button onclick="validate()" id="login">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
